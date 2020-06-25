@@ -1,0 +1,10 @@
+pokemon-card {
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+
+pokemon-card:hover {
+  border: 1px solid white;
+  border-radius: 2%;
+}

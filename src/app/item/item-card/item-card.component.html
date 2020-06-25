@@ -1,0 +1,29 @@
+<div>
+  <button
+    mat-raised-button
+    (click)="setFav()"
+    *ngIf="isIn === false && user != null"
+    color="warn"
+  >
+    Fav
+  </button>
+  <button
+    mat-raised-button
+    (click)="removeFav()"
+    *ngIf="isIn === true && user != null"
+    color="primary"
+  >
+    UnFav
+  </button>
+  <mat-card [routerLink]="['/pokemon/', name]">
+    <mat-card-content>
+      <h1>#{{ number }}</h1>
+    </mat-card-content>
+
+    <img [src]="picture" style="height: 96px;" />
+
+    <mat-card-content>
+      <mat-card-title> {{ name | titlecase }} </mat-card-title>
+    </mat-card-content>
+  </mat-card>
+</div>

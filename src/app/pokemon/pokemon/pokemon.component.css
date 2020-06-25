@@ -1,0 +1,81 @@
+.container {
+  width: 250px;
+  height: auto;
+  text-align: center;
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+.type1 {
+  float: left;
+  width: 50%;
+  margin: 0 25%;
+}
+.type2 {
+  float: left;
+  width: 40%;
+  margin: 0 5%;
+}
+
+
+/* Colors*/
+.poison {
+  color: blueviolet;
+  background-color: violet;
+}
+.grass {
+  color: green;
+  background-color: greenyellow;
+}
+.fire {
+  color: black;
+  background-color: crimson;
+}
+.flying {
+  color: grey;
+  background-color: whitesmoke;
+}
+.water {
+  background-color: cornflowerblue;
+}
+.bug {
+  color: black;
+  background-color: chartreuse;
+}
+.normal {
+  background-color: grey;
+}
+.electric {
+  color: white;
+  background-color: gold;
+}
+.ground {
+  background-color: peru;
+}
+.fairy {
+  background-color: pink;
+}
+.fighting {
+  background-color: brown;
+}
+.psychic {
+  background-color: indianred;
+}
+.rock {
+  background-color: saddlebrown;
+}
+.steel {
+  background-color: slategrey;
+}
+.ghost {
+  background-color: darkviolet;
+}
+.ice {
+  color: whitesmoke;
+  background-color: cyan;
+}

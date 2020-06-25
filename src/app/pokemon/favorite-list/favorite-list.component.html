@@ -1,0 +1,9 @@
+<mat-grid-list
+  (responsiveColsChange)="cols = $event"
+  rowHeight="250"
+  [responsive]="responsive"
+>
+  <mat-grid-tile *ngFor="let pokemon of pokemons.favorites">
+    <pokemon-card [(name)]="pokemon.name" [(url)]="pokemon.url"></pokemon-card>
+  </mat-grid-tile>
+</mat-grid-list>

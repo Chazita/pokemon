@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "trabajoPractico",
+      "public": "dist/trabajoPractico",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

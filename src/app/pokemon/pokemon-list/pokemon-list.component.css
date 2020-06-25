@@ -1,0 +1,48 @@
+pokemon-card {
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+}
+
+pokemon-card:hover {
+  border: 1px solid white;
+  border-radius: 2%;
+}
+.btnContainer {
+  margin-top: 5px;
+  margin-left: 15px;
+  width: 99%;
+}
+
+.btn {
+  width: 32%;
+  margin-right: 1.7%;
+}
+.btnLast {
+  width: 32%;
+}
+
+mat-icon {
+  display: none;
+}
+
+mat-form-field {
+  margin: 20px 0px 0px 15px;
+  width: 90%;
+}
+
+.rotate {
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5 linear;
+  transition: all 0.5s linear;
+  transform: rotate(0deg);
+  display: inline-block;
+}
+
+.rotate.down {
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+}

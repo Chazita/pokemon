@@ -1,0 +1,65 @@
+<div>
+  <div class="btnContainer">
+    <button
+      mat-flat-button
+      color="accent"
+      class="btn"
+      (click)="sortByName(sortName)"
+    >
+      Name
+      <mat-icon [class]="iconN">arrow_upward</mat-icon>
+    </button>
+    <button
+      mat-flat-button
+      color="accent"
+      class="btn"
+      (click)="sortByNumber(sortNumber)"
+    >
+      Number
+      <mat-icon [class]="iconNumber">arrow_upward</mat-icon>
+    </button>
+    <button
+      mat-flat-button
+      color="accent"
+      class="btnLast"
+      (click)="sortDefault()"
+    >
+      Reset
+    </button>
+  </div>
+  <div>
+    <form class="autocomplete">
+      <mat-form-field>
+        <input
+          type="text"
+          matInput
+          [matAutocomplete]="auto"
+          [formControl]="pokemonCtrl"
+          placeholder="Search pokemon"
+          class="inputAuto"
+        />
+        <mat-autocomplete
+          #auto="matAutocomplete"
+          [displayWith]="displayAutoComplete"
+        >
+          <mat-option
+            *ngFor="let pokemon of filteredPokemons | async"
+            [value]="pokemon"
+            class="optionAuto"
+          >
+            <p *ngIf="pokemon != undefined">{{ pokemon.name | titlecase }}</p>
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+</div>
+<mat-grid-list
+  (responsiveColsChange)="cols = $event"
+  rowHeight="250"
+  [responsive]="responsive"
+>
+  <mat-grid-tile *ngFor="let pokemon of filteredPokemons | async">
+    <pokemon-card [(name)]="pokemon.name" [(url)]="pokemon.url"></pokemon-card>
+  </mat-grid-tile>
+</mat-grid-list>

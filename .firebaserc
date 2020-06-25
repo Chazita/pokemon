@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pokemonlab4-b96d4": {
+      "hosting": {
+        "trabajoPractico": [
+          "pokemonlab4-b96d4"
+        ]
+      }
+    }
+  }
+}

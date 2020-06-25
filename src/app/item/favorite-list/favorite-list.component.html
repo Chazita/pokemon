@@ -1,0 +1,9 @@
+<mat-grid-list
+  (responsiveColsChange)="cols = $event"
+  rowHeight="250"
+  [responsive]="responsive"
+>
+  <mat-grid-tile *ngFor="let item of items.favorites">
+    <app-item-card [(name)]="item.name" [(url)]="item.url"></app-item-card>
+  </mat-grid-tile>
+</mat-grid-list>
